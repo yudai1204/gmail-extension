@@ -1,0 +1,17 @@
+{
+  "name": "Gmail Extension",
+  "version": "0.0.1",
+  "description": "Gmail Extension",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/mail/*"],
+      "js": ["main.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"]
+}
