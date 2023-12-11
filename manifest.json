@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Gmail Extension",
   "manifest_version": 3,
+  "options_page": "options/index.html",
   "content_scripts": [
     {
       "matches": ["https://mail.google.com/mail/*"],
